@@ -7,4 +7,4 @@ arpu_columns = ['ARPU_M1', 'ARPU_M2', 'ARPU_M3', 'ARPU_M4', 'ARPU_M5', 'ARPU_M6'
 for col in arpu_columns:
     df[col] = df[col].interpolate(method='linear', limit_direction='both')
 
-df.to_excel('arpu_data_filled.xlsx')
+df.to_excel('data_interpolated.xlsx')
